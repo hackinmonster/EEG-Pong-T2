@@ -5,7 +5,6 @@ import pygame
 import sys
 import tensorflow as tf
 
-# Constants
 WIDTH, HEIGHT = 800, 600
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -44,7 +43,6 @@ class Pong:
     def draw_objects(self):
         self.screen.fill(BLACK)
 
-        # Draw paddles and ball
         pygame.draw.rect(self.screen, WHITE, self.left_paddle)
         pygame.draw.rect(self.screen, WHITE, self.right_paddle)
         pygame.draw.ellipse(self.screen, WHITE, self.ball)
